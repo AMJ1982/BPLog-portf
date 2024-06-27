@@ -1,0 +1,1 @@
+(self.webpackChunkbplog=self.webpackChunkbplog||[]).push([[480],{2480:()=>{}}]);

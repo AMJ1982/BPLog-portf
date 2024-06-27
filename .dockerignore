@@ -1,0 +1,11 @@
+.dockerignore
+.gitignore
+Dockerfile
+node_modules/
+front/
+requests/
+docker-compose.yml
+.env
+mongoTest.js
+dcu.bat
+dcd.bat

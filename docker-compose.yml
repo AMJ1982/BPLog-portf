@@ -1,0 +1,11 @@
+services:
+  server:
+    image: bplog-back
+    build: 
+      context: .
+    ports:
+      - 3001:3001
+    environment:
+      - TOKEN_SECRET=${TOKEN_SECRET}
+      - MONGODB_URI=${MONGODB_URI}
+    container_name: bplog-cont

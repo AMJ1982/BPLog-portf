@@ -1,0 +1,31 @@
+{
+  "name": "bplog-back",
+  "version": "1.0.0",
+  "description": "BPLog, an app to store blood pressure statistics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prod": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js --ignore client",
+    "build": "rm -rf build && cd front && npm run build && cp -r build .. ",
+    "deploy": "npm run build && fly deploy",
+    "build:ui": "rm -rf build && cd front && npm run build --legacy-peer-deps && cp -r build .. && rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AMJ",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "mongoose-unique-validator": "^3.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
+}

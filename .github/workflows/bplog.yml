@@ -1,0 +1,26 @@
+# This was used as a CI/CD pipeline. After accepted pull requests to master branch,
+# the production version was deployed to render.com. The current version is running
+# in fly.io.
+name: BPLog-pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize]
+
+jobs:
+  test-print-job:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: npm install
+        run: npm install
+      - name: Date
+        run: |
+          date
