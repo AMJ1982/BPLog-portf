@@ -3,7 +3,9 @@
 
 ### Description
 
-BPLog is a web service for saving and compiling statistics of blood pressure readings. The user can browse their history of entries in a list view, modify and remove entries, or display monthly data as a line chart. These lists and charts can also be converted into PDF documents. BPLog works most reliably in Chromium-based browsers. It can be used regularly with a browser, and it's also installable for example on Windows and Android devices if the browser has PWA (progressive web application) support. The UI is responsive, i.e. it adapts to different screen sizes.
+BPLog is a web service for saving and compiling statistics of blood pressure readings. The user can browse their history of entries in a list view, modify and remove entries, or display monthly data as a line chart. These lists and charts can also be converted into PDF documents.
+
+BPLog works most reliably in Chromium-based browsers. It can be used regularly with a browser, and it's also installable for example on Windows and Android devices if the browser has PWA (progressive web application) support. The UI is responsive, i.e. it adapts to different screen sizes.
 
 ### Technologies
 
